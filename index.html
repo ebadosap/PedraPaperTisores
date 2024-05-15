@@ -1,25 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="ca">
 <head>
   <meta charset="UTF-8">
-  <title>Page Title</title>
+  <title>Joc pedra, paper, tisores</title>
+  <script src="sketch1.js"></script>
 </head>
 <body>
-  <script>
-    // Your JavaScript goes here!
-    //console.log("Hola món!")
-    let answer = parseInt(prompt("Please enter the number you would like to FizzBuzz up to:"));
-    for (let i =1; i <=answer; i++){
-      if (i % 3 === 0 && i % 5 === 0){
-        console.log("FizzBuzz");
-      } else if (i % 3 === 0){
-        console.log("Fizz");
-      } else if (i % 5 === 0){
-        console.log("Buzz");
-      } else {
-        console.log(i);
-      }
-    }
-  </script>
+  <h1>Joc pedra, paper, tisores</h1>
+  <p>Escull una opció:</p>
+  <button onclick="jugar('pedra')">Pedra</button>
+  <button onclick="jugar('paper')">Paper</button>
+  <button onclick="jugar('tisores')">Tisores</button>
+  <p id="resultat"></p>
 </body>
 </html>
